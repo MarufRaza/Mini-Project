@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Chats</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">NativeLang</a>
+    </nav>
+    <div class="container mt-4">
+        <h1>Recent Connection</h1>
+        <ul class="list-group" id="recentChatsList">
+            <!-- Recent chats will be appended here dynamically -->
+        </ul>
+    </div>
+    <script>
+        // Simulated recent chats data
+        const recentChats = [
+            " John(America) - 10:30 AM 28 Jan 2024",
+            " Shi-Lee(Japan) - 11:00 AM 15 July 2024",
+            " Farhan(Turkey) - 12:15 PM 21 August 2024",
+            " Dev(India) - 01:00 PM 19 November 2024"
+        ];
+
+        // Populate the recent chats list
+        const recentChatsList = document.getElementById('recentChatsList');
+        recentChats.forEach(chat => {
+            const listItem = document.createElement('li');
+            listItem.textContent = chat;
+            listItem.className = 'list-group-item';
+            recentChatsList.appendChild(listItem);
+        });
+    </script>
+    <footer class="text-center py-4 bg-light">
+        <p>&copy; 2024 NativeLang. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

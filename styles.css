@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h5 {
+    color: #343a40;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.jumbotron {
+    background-color: rgba(233, 236, 239, 0.9); /* Slightly transparent background */
+    padding: 40px;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent container background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent card background */
+}
+.marquee {
+     display: inline-block; 
+     white-space: nowrap; 
+     overflow: hidden; 
+     box-sizing: border-box; 
+     animation: marquee 10s linear infinite; 
+    } 
+    @keyframes marquee { 
+        from {
+             transform: translateX(100%); }
+              to { transform: translateX(-100%); 
+            } 
+    }
+    .scroll-text {
+         display: inline-block; 
+         white-space: nowrap; 
+         overflow: hidden; 
+         box-sizing: border-box; 
+         animation: scroll 10s linear infinite; 
+        } 
+    @keyframes scroll { 
+            from { 
+                transform: translateX(100%); 
+                } to { transform: translateX(-100%); 
+            } 
+        }
